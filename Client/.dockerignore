@@ -1,0 +1,9 @@
+node_modules
+dist
+npm-debug.log
+.git
+Dockerfile
+# Le lockfile a été généré sous Windows : il n'inclut pas le binaire natif
+# de rolldown pour Linux/Alpine, et le build échouerait. On l'exclut pour que
+# npm résolve les bonnes dépendances dans le conteneur.
+package-lock.json
